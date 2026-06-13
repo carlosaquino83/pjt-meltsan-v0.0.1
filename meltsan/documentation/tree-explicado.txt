@@ -1,0 +1,372 @@
+(venv) caas@caas-dellg155530:~/Documents/Devs/pjt-meltsan/v0.0.1/meltsan$ tree
+.
+├── devices
+│   ├── android
+│   │   └── readme.txt
+│   └── ios
+│       └── readme.txt
+├── documentation
+│   ├── api
+│   │   └── readme.txt
+│   ├── Meltsan - Puesta a punto para la PC - Apuntes Obsoletos.pdf
+│   ├── tree-explicado.txt
+│   └── user_guide
+│       └── readme.txt
+├── __init__.py
+├── installation
+│   ├── __init__.py
+│   ├── MeltsanInstallation.py
+│   └── theme
+│       ├── files
+│       │   ├── 001.install.js
+│       │   └── 001.style.css
+│       ├── __init__.py
+│       └── MeltsanInstallTheme.py
+├── meltsan.js
+├── Meltsan.py
+├── modules
+│   ├── Comment
+│   │   ├── __init__.py
+│   │   └── MeltsanModuleComment.py
+│   ├── ConfigVars
+│   │   ├── __init__.py
+│   │   └── MeltsanModuleConfigVars.py
+│   ├── Content
+│   │   ├── __init__.py
+│   │   └── MeltsanModuleContent.py
+│   ├── Group
+│   │   ├── __init__.py
+│   │   └── MeltsanModuleGroup.py
+│   ├── __init__.py
+│   ├── MeltsanParentModuleAccess.py
+│   ├── MeltsanParentModuleComment.py
+│   ├── MeltsanParentModuleDb.py
+│   ├── MeltsanParentModuleGeneric.py
+│   ├── MeltsanParentModuleWorkflow.py
+│   ├── Permission
+│   │   ├── __init__.py
+│   │   └── MeltsanModulePermission.py
+│   ├── Report
+│   │   ├── __init__.py
+│   │   └── MeltsanModuleReport.py
+│   ├── Role
+│   │   ├── __init__.py
+│   │   └── MeltsanModuleRole.py
+│   ├── Schema
+│   │   ├── __init__.py
+│   │   └── MeltsanModuleSchema.py
+│   ├── User
+│   │   ├── __init__.py
+│   │   └── MeltsanModuleUser.py
+│   └── Workflow
+│       ├── __init__.py
+│       └── MeltsanModuleWorkflow.py
+├── show
+│   ├── generic
+│   │   ├── angular
+│   │   │   ├── __init__.py
+│   │   │   └── v0.0.1
+│   │   │       └── __init__.py
+│   │   ├── react
+│   │   │   ├── __init__.py
+│   │   │   └── v0.0.1
+│   │   │       └── __init__.py
+│   │   ├── vue
+│   │   │   ├── __init__.py
+│   │   │   └── v0.0.1
+│   │   │       └── __init__.py
+│   │   └── watsil
+│   │       ├── __init__.py
+│   │       └── v0.0.1
+│   │           ├── css
+│   │           │   ├── 001.watsil_customs.css
+│   │           │   └── 002.watsil.css
+│   │           ├── img
+│   │           │   └── readme.txt
+│   │           ├── __init__.py
+│   │           ├── js
+│   │           │   ├── 001.watsil_html.js
+│   │           │   ├── 002.watsil_comm.js
+│   │           │   └── gridform
+│   │           │       ├── 003.watsil_grid.js
+│   │           │       ├── 004.watsil_search.js
+│   │           │       └── 005.watsil_form.js
+│   │           ├── MeltsanShowWatsil.py
+│   │           └── other
+│   │               └── readme.txt
+│   ├── __init__.py
+│   ├── MeltsanShow.py
+│   └── themes
+│       ├── __init__.py
+│       ├── MeltsanShowTheme.py
+│       └── Watsil
+│           ├── css
+│           │   ├── 101.theme_customs.css
+│           │   └── 102.theme.css
+│           ├── img
+│           │   └── readme.txt
+│           ├── __init__.py
+│           ├── js
+│           │   └── theme.js
+│           ├── MeltsanThemeWatsil.py
+│           └── other
+│               └── readme.txt
+├── system
+│   ├── ai
+│   │   ├── agent
+│   │   │   └── __init__.py
+│   │   ├── __init__.py
+│   │   └── MeltsanAI.py
+│   ├── comm
+│   │   ├── chat
+│   │   │   ├── __init__.py
+│   │   │   └── MeltsanChat.py
+│   │   ├── documentator
+│   │   │   ├── __init__.py
+│   │   │   └── MeltsanDocumentator.py
+│   │   ├── __init__.py
+│   │   ├── MeltsanComm.py
+│   │   ├── service
+│   │   │   ├── __init__.py
+│   │   │   ├── MeltsanService.py
+│   │   │   └── services
+│   │   │       └── __init__.py
+│   │   └── shell
+│   │       ├── __init__.py
+│   │       └── MeltsanShell.py
+│   ├── config
+│   │   ├── __init__.py
+│   │   └── MeltsanConfig.py
+│   ├── database
+│   │   ├── __init__.py
+│   │   ├── matcher
+│   │   │   ├── __init__.py
+│   │   │   └── MeltsanMatcher.py
+│   │   ├── MeltsanDatabase.py
+│   │   └── orm
+│   │       ├── drivers
+│   │       │   ├── __init__.py
+│   │       │   ├── mariadb
+│   │       │   │   ├── __init__.py
+│   │       │   │   └── v0.0.1
+│   │       │   │       ├── __init__.py
+│   │       │   │       └── readme.txt
+│   │       │   ├── MeltsanDriver.py
+│   │       │   ├── mongo
+│   │       │   │   ├── __init__.py
+│   │       │   │   └── v0.0.1
+│   │       │   │       ├── __init__.py
+│   │       │   │       └── readme.txt
+│   │       │   ├── mssql
+│   │       │   │   ├── __init__.py
+│   │       │   │   └── v0.0.1
+│   │       │   │       ├── __init__.py
+│   │       │   │       └── readme.txt
+│   │       │   ├── mysql
+│   │       │   │   ├── __init__.py
+│   │       │   │   └── v0.0.1
+│   │       │   │       ├── __init__.py
+│   │       │   │       └── readme.txt
+│   │       │   ├── oracle
+│   │       │   │   ├── __init__.py
+│   │       │   │   └── v0.0.1
+│   │       │   │       ├── __init__.py
+│   │       │   │       └── readme.txt
+│   │       │   └── pgsql
+│   │       │       ├── __init__.py
+│   │       │       └── v0.0.1
+│   │       │           ├── __init__.py
+│   │       │           ├── MeltsanDriverPGSQL.py
+│   │       │           └── pgbouncer
+│   │       │               ├── __init__.py
+│   │       │               └── readme.txt
+│   │       ├── __init__.py
+│   │       └── MeltsanORM.py
+│   ├── director
+│   │   ├── __init__.py
+│   │   └── MeltsanDirector.py
+│   ├── formatter
+│   │   ├── __init__.py
+│   │   └── MeltsanFormatter.py
+│   ├── __init__.py
+│   ├── log
+│   │   ├── __init__.py
+│   │   └── MeltsanLog.py
+│   └── misc
+│       ├── __init__.py
+│       └── MeltsanMisc.py
+└── varstore
+    ├── backup
+    ├── __init__.py
+    ├── MeltsanVarstore.py
+    ├── modules
+    └── tmp
+        ├── debug
+        │   ├── 2026-06-12--23-59-58.123456789---info-SUFIX.inf
+        │   └── 2026-06-12--23-59-59.123456789---debug-SUFIX.dbg
+        └── issue
+            ├── 2026-06-12--23-59-56.123456789---warn-SUFIX.wrn
+            └── 2026-06-12--23-59-57.123456789---error-SUFIX.err
+
+
+--------------------------------------------------------------------
+
+
+(venv) caas@caas-dellg155530:~/Documents/Devs/pjt-meltsan/v0.0.1/meltsan$ tree
+.
+├── devices [Directorio para almacenar proyectos de dispositivos mac, android y otro que llegue a aplicar]
+│   ├── android [Aquí se colocará el proyecto de Android Studio]
+│   └── ios [Aquí se colocará el proyecto de ios (iphone's)]
+├── documentation [Directorio para almacenar la lógica que generará la documentación automatizada (MeltsanDocumentator.py) y los archivos resultado de la misma (html, txt, PDF, etc.)]
+│   ├── api [Dentro se colocará el sitio HTML para consultar la documentación API en línea, de preferencia un solo index.html o los menos posibles]
+│   ├── Meltsan - Puesta a punto para la PC - Apuntes Obsoletos.pdf [Primer PDF, ya obsoleto]
+│   └── user_guide [Dentro se colocará el sitio HTML para consultar la guía de usuario en línea (cómo instalar, crear un módulo, hacer una consulta ORM a los datos, etc.), de preferencia un solo index.html o los menos posibles]
+├── installation [Directorio para contener el instalador del sitio, que principalmente definirá las variables de conexión a BD, y otras configs necesarias para el arranque de Meltsan]
+│   ├── MeltsanInstallation.py [Contendrá la clase que presentará el sitio de instalación y ejecutá el configurador principal. Esta clase solo escribirá a file system, no se conectará a ningún DBMS]
+│   └── theme
+│       ├── files
+│       │   ├── 001.install.js
+│       │   └── 001.style.css
+│       └── MeltsanInstallTheme.py [Será llamado por la clase [MeltsanInstallation] que ejecutará el TEMA del sitio de instalación]
+├── meltsan.js [Este archivo estará vacío al inicio pero almacenará el JSON generado por el instalador para activar a Meltsan por primera vez. Podrá ser reeditado por Meltsan cuando el usuario navegue en la instalación del sitio posteriormente a la primera instalación, por si decide hacer cambios en la configuración del sitio. Por eso installation tiene ese nombre genéricoporque desde ahí el usuario ultra-administrador podrá editar las configuraciones para re-configurar a meltsan a conveniencia. También por eso aquí no se usan DBMS, solo meltsan.js para almacenar las configs. Todo lo que no pueda ser puesto en este js se verá en otras configuraciones pero ya para meltsan corriendo]
+├── Meltsan.py [Clase principal de arranque. Aquí es donde se tiene el método Meltsan.main() para ejecutar TODO el sistema, aquí es a donde deben llegar las solicitudes GET y/o POST, o cualquier otra que el sistema tenga que procesar. Meltsan dirige TODO el hilo de lógica hacia la clase MeltsanDirector en MeltsanDirector.py y es el director el encargado de ir mediando los procesos conforme se requieran dentro de los objetos de Meltsan]
+├── modules [carpeta que almacenará los módulos del sistema. TODOS los módulos se llamarán igual en su carpeta como en su archivo py, excepto que el .py se precede con el prefijo "MeltsanModule" SIN EXCEPCIÓN y el resto del nombre del .py es igual que la carpeta. Todos los .py contendrán su objeto, su clase con el mismo nombre que el archivo py, por ejemplo /User/MeltsanModuleUser.py contendrá únicamente la clase (class MeltsanModuleUser:). Todos los módulos tienen nombres representativos de lo que controlarán. Si en caso se necesitaran mas herencias a las clases de módulo se irán agregando sobre el pico de la herencia (en este caso, encima de MeltsanModuleWorkflow). El resto de las subcarpetas son los módulos principales para arrancar una versión muy ligera de meltsan. con nombres representativos]
+│   ├── MeltsanParentModuleAccess.py [Hereda hacia MeltsanModuleDb.py, es padre de MeltsanModuleDb.py. Gestiona la funcionalidad de Accesos del módulo]
+│   ├── MeltsanParentModuleComment.py [Hereda hacia MeltsanModuleAccess.py, es padre de MeltsanModuleAccess.py. Gestiona la funcionalidad de comentarios del módulo]
+│   ├── MeltsanParentModuleDb.py [Hereda hacia MeltsanModuleGeneric.py, es padre de MeltsanModuleGeneric.py. Gestiona la funcionalidad de BD/DBMD/ORM del módulo]
+│   ├── MeltsanParentModuleGeneric.py [La clase mas importante para heredarle a todos los objetos de módulo, TODOS heredarán de esta que comenzará la herencia hacia arriba]
+│   ├── MeltsanParentModuleWorkflow.py [Hereda hacia MeltsanModuleComment.py, es padre de MeltsanModuleComment.py. Gestiona la funcionalidad de Workflow del módulo]
+│   ├── Comment
+│   │   └── MeltsanModuleComment.py
+│   ├── ConfigVars
+│   │   └── MeltsanModuleConfigVars.py
+│   ├── Content
+│   │   └── MeltsanModuleContent.py
+│   ├── Group
+│   │   └── MeltsanModuleGroup.py
+│   ├── Permission
+│   │   └── MeltsanModulePermission.py
+│   ├── Report
+│   │   └── MeltsanModuleReport.py
+│   ├── Role
+│   │   └── MeltsanModuleRole.py
+│   ├── Schema
+│   │   └── MeltsanModuleSchema.py
+│   ├── User
+│   │   └── MeltsanModuleUser.py
+│   └── Workflow
+│       └── MeltsanModuleWorkflow.py
+├── show [Contendrá todo lo relacionado a la presentación front-temas de meltsan]
+│   ├── MeltsanShow.py [Clase cuello para las solicitudes para presentación/tema/front]
+│   ├── generic [colección de frameworks que el sitio puede utilizar para sus funciones de frontend principalmente. Por el momento solo se desarrollará el front propio llamado watsil]
+│   │   ├── angular
+│   │   │   └── v0.0.0
+│   │   │       └── readme.txt
+│   │   ├── react
+│   │   │   └── v0.0.0
+│   │   │       └── readme.txt
+│   │   ├── vue
+│   │   │   └── v0.0.0
+│   │   │       └── readme.txt
+│   │   └── watsil [Front principal del sitio (y único por el momento). Se llama Watsil (Brillo/Claridad en un dialecto maya chiapaneco). Las subcarpetas tienen nombres representativos a su uso]
+│   │       └── v0.0.1
+│   │           ├── css
+│   │           │   ├── 001.watsil_customs.css
+│   │           │   └── 002.watsil.css
+│   │           ├── img
+│   │           │   └── readme.txt
+│   │           ├── js
+│   │           │   ├── 001.watsil_html.js
+│   │           │   ├── 002.watsil_comm.js
+│   │           │   └── gridform
+│   │           │       ├── 003.watsil_grid.js
+│   │           │       ├── 004.watsil_search.js
+│   │           │       └── 005.watsil_form.js
+│   │           ├── MeltsanShowWatsil.py [Objeto genérico (cuello) para interactuar con los fronts genéricos del sistema]
+│   │           └── other [otros archivos para uso del front]
+│   │               └── readme.txt
+│   └── themes [colección de temas del sitio]
+│       ├── MeltsanShowTheme.py [Objeto genérico (cuello) para interactuar con los temas del sistema]
+│       └── Watsil [Tema principal del sitio (y único por el momento). Se llama Watsil (Brillo/Claridad en un dialecto maya chiapaneco). Las subcarpetas tienen nombres representativos a su uso]
+│           ├── css
+│           │   ├── 101.theme_customs.css
+│           │   └── 102.theme.css
+│           ├── img
+│           │   └── readme.txt
+│           ├── js
+│           │   └── theme.js
+│           ├── MeltsanThemeWatsil.py [Objeto que responderá las solicitudes de MeltsanShowTheme.py]
+│           └── other [otros archivos para uso del tema]
+│               └── readme.txt
+├── system [Lógica del sistema, el "núcleo del núcleo"]
+│   ├── ai [Todo lo relacionado con la interacción de agentes IA externos a meltsan]
+│   │   ├── agent [Objetos que especificarán lo que MeltsanAI solicitará a la IA, canalizándo el requerimiento al objeto correcto de interacción con X agente de IA]
+│   │   │   └── readme.txt
+│   │   └── MeltsanAI.py [Objeto "cuello" que ejecutará procesos y llamadas a agentes de IA]
+│   ├── comm [objetos comunicadores de información de meltsan]
+│   │   ├── chat [Objeto para crear el chat genérico del meltsan (lógica de operación en el sistema únicamente, la apariencia física se tendrá en el tema del sistema)]
+│   │   │   └── MeltsanChat.py
+│   │   ├── documentator [Objeto documentador automático de código de meltsan. El resultado se escribe en las carpetas dentro de "documentation"]
+│   │   │   └── MeltsanDocumentator.py
+│   │   ├── MeltsanComm.py [Objeto "cuello" que gestiona la comunicación de meltsan]
+│   │   ├── service [Servicios web que puedan necesitarse]
+│   │   │   ├── MeltsanService.py [Objeto que gestionará el acceso a los servicios definidos]
+│   │   │   └── services [Objetos de servicios]
+│   │   │       └── readme.txt
+│   │   └── shell [Objeto para comunicarse con la consola de SO]
+│   │       └── MeltsanShell.py
+│   ├── config [Contendrá al objeto ESTÁTICO, imposible de modificar por los objetos que tengan acceso a él, que colectará todas las configuraciones del sistema encontradas en JSON (meltsan.js), dict (modules: los módulos podrán tener sus propias configuraciones definidas en una variable que ellos generen en su clase) o base de datos (config vars)]
+│   │   └── MeltsanConfig.py
+│   ├── database [Contiene todos los objetos para trabajar con los DBMS seleccionados por el sistema y otras operaciones a df pandas de base de datos]
+│   │   ├── matcher [Contiene la clase para comparar 2 dataframes de pandas y conciliar similitudes entre ellos a partir de identificadores en cada una de sus filas, generando un tercer df "matched" según un conjunto de reglas a aplicar en la comparación]
+│   │   │   └── MeltsanMatcher.py
+│   │   ├── MeltsanDatabase.py [Objeto que será compartido por todos los módulos del sistema meltsan (a través de herencia desde MeltsanModuleDb) para gestionar el ORM y demás funcionalidades de extracción/consulta/gestión de BD]
+│   │   └── orm
+│   │       ├── drivers [drivers que "traducirán" las solicitudes del ORM hacia sus respectivos DBMS]
+│   │       │   ├── mariadb
+│   │       │   │   └── v0.0.1
+│   │       │   │       └── readme.txt
+│   │       │   ├── MeltsanDriver.py [Cuello genérico que interectuará con el driver y MeltsanORM.py, para responder solo a MeltsanORM.py]
+│   │       │   ├── mongo [Mongo DB]
+│   │       │   │   └── v0.0.1
+│   │       │   │       └── readme.txt
+│   │       │   ├── mssql [Microsoft SQL Server]
+│   │       │   │   └── v0.0.1
+│   │       │   │       └── readme.txt
+│   │       │   ├── mysql [MySQL]
+│   │       │   │   └── v0.0.1
+│   │       │   │       └── readme.txt
+│   │       │   ├── oracle [ORACLE]
+│   │       │   │   └── v0.0.1
+│   │       │   │       └── readme.txt
+│   │       │   └── pgsql [el primer DBMS driver que será creado]
+│   │       │       └── v0.0.1
+│   │       │           ├── MeltsanDriverPGSQL.py [para la traducción del ORM a postgres y viceversa, devolviendo/interactuando solo con MeltsanDriver.py]
+│   │       │           └── pgbouncer [aún por definir lo que se necesite para pgbouncer y lograr el mejor rendimiento de postgres con la RAM con conexiones activas]
+│   │       │               └── readme.txt
+│   │       └── MeltsanORM.py [Solicita a MeltsanDriver.py lo que pida MeltsanDatabase.py convirtiendo los dict de solicitud de MeltsanDatabase.py en el ORM necesario que pueda entender el Driver]
+│   ├── director [Contiene la clase Director que orquestará el arranque de la lógica del núcleo y gestionará la respuesta de los módulos. Toda la comunicación bidireccional pasará por esta clase. Es el director del sistema]
+│   │   └── MeltsanDirector.py
+│   ├── misc [Clase estática con funciones genéricas y/o misceláneas para la funcionalidad de Meltsan (formateo de fechas, lectura de carpetas y archivos, etc.)]
+│   │   └── MeltsanMisc.py
+│   ├── formatter [Clase que traducirá archivos js o txt que contengan JSON a dict de python y viceversa (también aplica para otros formatos como XML, YAML, CSV, BSON, MessagePack, Protobuf, etc.)]
+│   │   └── MeltsanFormatter.py
+│   └── log [Clase que controlará el Log del sistema y generará archivos txt de seguimiento y también info, debug, warnings y errors en varstore]
+│       └── MeltsanLog.py
+└── varstore
+    ├── backup [por si el sistema necesita crear archivos de respaldo, se almacenarán aquí]
+    ├── MeltsanVarstore.py [Clase que controlará el acceso a los archivos de la varstore, para tener un cuello por donde pasen todas las solicitudes hacia estos archivos]
+    ├── modules [por si los módulos necesitan almacenar algún tipo de archivo generado]
+    └── tmp [para colocar archivos temporales por si algún módulo del sistema lo necesita]
+        ├── debug [Aquí se colocarán las infos y debugs que genere la clase en Log.py, con la nomenclatura de los archivos debajo, empezando por la fecha en formato aaaa-mm-dd, dos guiones medios, la hora-minuto-segundo.nanosegundo, tres guiones medios, si es "info" o "debug", luego un guión medio y un sufijo personalizado y enviado por el proceso que crea el evento (que reemplazará la etiqueta SUFIX) con extensión "inf" para info y "dbg" para debug. Todos estos archivos serán consumidos por un proceso que los va a presentar en el sitio, así que contendrán html puro que será consumido por dicho proceso para presentar info o debugs]
+        │   ├── 2026-06-12--23-59-58.123456789---info-SUFIX.inf
+        │   └── 2026-06-12--23-59-59.123456789---debug-SUFIX.dbg
+        └── issue [Aquí se colocarán los warnings y errores que genere la clase en Log.py, con la nomenclatura de los archivos debajo, empezando por la fecha en formato aaaa-mm-dd, dos guiones medios, la hora-minuto-segundo.nanosegundo, tres guiones medios, si es "warn" o "error", luego un guión medio y un sufijo personalizado y enviado por el proceso que crea el evento (que reemplazará la etiqueta SUFIX) con extensión "wrn" para warning y "err" para error. Todos estos archivos serán consumidos por un proceso que los va a presentar en el sitio, así que contendrán html puro que será consumido por dicho proceso para presentar wrns o errors]
+            ├── 2026-06-12--23-59-56.123456789---warn-SUFIX.wrn
+            └── 2026-06-12--23-59-57.123456789---error-SUFIX.err
+
+
+
+
+
+En general ahorita solo se cuenta con la estructura, las carpetas están ya definidas en estructura y todos los archivos están vacíos, no tienen nada, aún falta programar la lógica desde cero... Meltsan está pensado para ser un framework de propósito general que almacene sus propios debugs, infos, errores y warnings, su propio método de instalación/configuración, y tener su propio núcleo geneŕico para proporcionarle funcionalidad a los módulos y temas del programador final. El programador final solo debería extender la funcionalidad a traveś de módulos que tendrán implícitamente acceso por herencia a la funcionalidad ORM y en su clase de módulo setear una sola entidad de BD con sus campos, relaciones [o2m, m2m, m2o, o2o], sus permisos de usuario, sus grupos y roles que necesite (suscribirlos en una variable de clase para que cada módulo independiente los cree), establecer las columnas y filtros a mostrar en el grid del módulo y los campos a mostrar en el formulario y la manera en cómo se presentará el formulario para adaptarlo con css a la resolución de pantalla de diversos dispositivos (tiny/phone, small/tablet, medium/monitor < 15' y large/monitor >= 15'), todo esto se configura en el módulo por el programador final, como tentáculos de un núcleo previamente desarrollado. También el desarrollador/diseñador podrá personalizar los temas y configurar el que desee implementar. Pero solo eso en principio deberá ejecutar el desarrollador final: Módulos y Temas...
